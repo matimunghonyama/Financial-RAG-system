@@ -166,7 +166,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Your Name - [Your Email]
+Matimu Nghonyama- nghonyamamatimu@gmail.com
 
 Project Link: [https://github.com/yourusername/financial-rag-system](https://github.com/yourusername/financial-rag-system)
 
