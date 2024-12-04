@@ -2,7 +2,7 @@
 
 ## 🚀 Project Overview
 
-An advanced Retrieval-Augmented Generation (RAG) system designed to extract, analyze, and provide insights from financial reports using cutting-edge machine learning and natural language processing techniques.
+An advanced Retrieval-Augmented Generation (RAG) system designed to extract, analyze, and provide insights from financial reports using cutting-edge machine learning and natural language processing techniques. This project supports multi-model benchmarking to compare performance across different AI models.
 
 ## ✨ Key Features
 
@@ -11,18 +11,26 @@ An advanced Retrieval-Augmented Generation (RAG) system designed to extract, ana
 - Advanced text extraction and chunking
 - Robust financial metric identification
 
-### 2. Vector-Based Search and Retrieval
+### 2. Multi-Model Comparison
+- Benchmarking performance across:
+  - Gemma 7B
+  - Llama 3
+  - Mixtral 8B
+- Comparative analysis of model capabilities
+- Performance metrics tracking
+
+### 3. Vector-Based Search and Retrieval
 - Pinecone vector database integration
 - Semantic document indexing
 - Advanced similarity search capabilities
 
-### 3. Machine Learning Insights
+### 4. Machine Learning Insights
 - Anomaly detection
 - Sentiment analysis
 - Financial trend visualization
 - Predictive financial modeling
 
-### 4. Interactive Analysis
+### 5. Interactive Analysis
 - Streamlit-powered web interface
 - Natural language querying
 - Dynamic visualization of financial metrics
@@ -41,6 +49,10 @@ An advanced Retrieval-Augmented Generation (RAG) system designed to extract, ana
 ### Machine Learning Models
 - FinBERT for sentiment analysis
 - Isolation Forest for anomaly detection
+- Model Lineup:
+  - Gemma 7B
+  - Llama 3
+  - Mixtral 8B
 - Custom embedding models
 
 ## 🔧 Installation
@@ -51,6 +63,7 @@ An advanced Retrieval-Augmented Generation (RAG) system designed to extract, ana
 - virtualenv (recommended)
 
 ### Setup
+
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/financial-rag-system.git
@@ -62,11 +75,6 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Set up Pinecone (required)
-# 1. Sign up at pinecone.io
-# 2. Create a new index
-# 3. Add your API key to .streamlit/secrets.toml
 ```
 
 ### Pinecone Configuration
@@ -85,23 +93,33 @@ streamlit run app.py
 
 ## 📝 Usage Guide
 
-### 1. Document Upload
-- Click "Upload Financial Reports (PDFs)"
-- Select multiple PDF files
-- Wait for processing and analysis
+1. **Document Upload**
+   - Click "Upload Financial Reports (PDFs)"
+   - Select multiple PDF files
+   - Wait for processing and analysis
 
-### 2. Insights Dashboard
-- View extracted financial metrics
-- Explore sentiment analysis
-- Examine anomaly detection results
-- Interact with predictive models
+2. **Model Comparison Dashboard**
+   - View performance metrics for different models
+   - Compare response times
+   - Analyze model-specific insights
 
-### 3. Advanced Querying
-- Use natural language to ask questions
-- Receive context-aware responses
-- Leverage semantic search capabilities
+3. **Insights Dashboard**
+   - View extracted financial metrics
+   - Explore sentiment analysis
+   - Examine anomaly detection results
+   - Interact with predictive models
+
+4. **Advanced Querying**
+   - Use natural language to ask questions
+   - Receive context-aware responses
+   - Compare responses across different models
 
 ## 🔬 Advanced Features
+
+### Multi-Model Benchmarking
+- Compare model performance
+- Evaluate response accuracy
+- Analyze computational efficiency
 
 ### Semantic Search
 - Converts documents into dense vector representations
@@ -131,7 +149,7 @@ streamlit run app.py
 - Predictions are probabilistic
 - Requires high-quality input documents
 - Not a substitute for professional financial advice
-- Performance depends on document quality
+- Performance depends on document quality and model selection
 
 ## 🔒 Privacy and Security
 
@@ -145,6 +163,7 @@ streamlit run app.py
 - Query Response Time: < 2 seconds
 - Supported PDF Size: Up to 50MB
 - Concurrent Users: 5-10 recommended
+- Model-specific performance tracking available
 
 ## 🛡️ Error Handling
 
@@ -154,11 +173,12 @@ streamlit run app.py
 
 ## 📦 Planned Enhancements
 
-- [ ] Support for more document types
-- [ ] Enhanced ML model fine-tuning
-- [ ] Real-time financial data integration
-- [ ] Advanced visualization techniques
-- [ ] Multi-language support
+- Support for more document types
+- Enhanced ML model fine-tuning
+- Real-time financial data integration
+- Advanced visualization techniques
+- Multi-language support
+- Additional model integrations
 
 ## 📜 License
 
@@ -166,13 +186,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Contact
 
-Matimu Nghonyama- nghonyamamatimu@gmail.com
+Matimu Nghonyama - nghonyamamatimu@gmail.com
 
-Project Link: [https://github.com/yourusername/financial-rag-system](https://github.com/yourusername/financial-rag-system)
+Project Link: https://github.com/yourusername/financial-rag-system
 
 ## 🙏 Acknowledgements
 
-- Pinecone
+- Groq
 - LangChain
 - Hugging Face
 - Streamlit
